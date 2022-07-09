@@ -39,10 +39,10 @@ font-family stack for 'condensed' elements, such as hX headings, header navigati
 
    -----------------------------  */
 
-body {
-    font-family: Roboto, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+HTML,body {
+    font-family: Roboto;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* turn off sections you aren't working on so you can focus!
@@ -154,41 +154,57 @@ header
 
 /* ----------------------------- */
 .explore{
-   background-image: url('../images/campus_bridge_river.jpg');
+   background-image: url('../images/campus_bridge_river.jpg')  ; 
+   background-size: cover;
   
+}
+.explore img{
+   width:100%;
+   max-width:600px;
 }
 .explore h1{
    
       text-align: center;
       color: white;
+      font-weight: bold;
+      font-size:350%;
+      
      
 }
 
 .sections {
-  
+ 
    display: grid;
   grid-template-columns: auto auto auto;
-  padding: 10px;
-  
+  padding: 5px;
+ margin-top:  3%;
+ margin-left: 10%;
+ margin-right: 10%;
+ margin-bottom: 5%;
+  align-items: center;
 }
 
 .sections section{
   
-   height:15rem;
-   width: 15rem;
+   height:13rem;
+   width: 16.5rem;
    background-color: #ebebeb;
   
    border-top: 5px solid #a51c30;
-    margin: 5px;
+   margin: 1%;
+
 }
 .sections section h2{
    
    background-color: white;
    padding: 1%;
    margin: 0px;
+   text-align:left;
 }
 .sections section  li {
    list-style: none;
+  
+   padding: 1.5%;
   
 }
 .sections section li::after{
@@ -216,23 +232,41 @@ header
 }
 .studentsuccess h2{
   text-align: center;
+  font-size:200%;
+}
+#studentinfo{
+   height: 3%;
+   width: 50%;
+   text-align: justify;
+   margin: auto;
 }
 .studentsuccess p{
    text-align: center;
    word-wrap: normal;
  }
  .articles{
-   display: grid;
+   /* display: grid;
    grid-template-columns: auto auto auto;
-   padding: 10px;
- 
+  
+   padding: 5px;
+
+   margin-left: 15%; */
+
+   display: flex;
+  gap: 2%;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   
  }
 .articles article{
    background-color: white;
-   width: 15rem;
-   text-justify: auto
-  
+   width: 25rem;
+   text-justify: auto;
+   height:36rem;
+   border: 1px solid #a51c30;
+   border: solid white 4px;
 }
 
 .articles article p{
@@ -244,7 +278,8 @@ header
 
 .articles img{
   
-   width: 10rem;
+   width: 20rem;
+   margin:0.55rem ;
 }
 
 footer{
